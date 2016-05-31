@@ -41,19 +41,67 @@ html(ng-app="app")
 
                 .card
                     .card__number 1
-                    .card__title Title
-                    .card__description Description
+                    .card__title Are variable names intention-revealing?
+                    .card__what
+                        .list.list--what
+                            .list-heading What?
+                            .list-item All code should be easy to understand for other developers
+                    .card__why
+                        .list.list--why
+                            .list-heading Why?
+                            .list-item To make sure the code can be updated, refactored and maintained by others if needed
                     .card__links
-                        a(href="", target="_blank") Link 1
-                        a(href="", target="_blank") Link 2
+                        .list.list--links
+                            .list-heading Links
+                            .list-item
+                                a(href="", target="_blank") Link 1
+                            .list-item
+                                a(href="", target="_blank") Link 2
+
 
                 .card
                     .card__number 2
-                    .card__title Title
-                    .card__description Description
+                    .card__title Is code linted/hinted?
+                    .card__what
+                        .list.list--what
+                            .list-heading What?
+                            .list-item All code should be syntactically correct
+                    .card__why
+                        .list.list--why
+                            .list-heading Why?
+                            .list-item To avoid unpredictable errors
                     .card__links
-                        a(href="", target="_blank") Link 1
-                        a(href="", target="_blank") Link 2
+                        .list.list--links
+                            .list-heading Links
+                            .list-item
+                                a(href="http://jshint.com/", target="_blank") http://jshint.com
+                            .list-item
+                                a(href="http://eslint.org/", target="_blank") http://eslint.org/
+                            .list-item
+                                a(href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#js-hint", target="_blank") https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#js-hint
+
+                .card
+                    .card__number 3
+                    .card__title Is `controller as` syntax used?
+                    .card__what
+                        .list.list--what
+                            .list-heading What?
+                            .list-item Use <code>controllerAs</code>
+                            .list-item Use <code>bindToController</code>
+                    .card__why
+                        .list.list--why
+                            .list-heading Why?
+                            .list-item Avoid pitfalls from scope soup
+                            .list-item Target outer scopes easily from within inner scopes
+                    .card__links
+                        .list.list--links
+                            .list-heading Links
+                            .list-item
+                                a(href="https://toddmotto.com/digging-into-angulars-controller-as-syntax/", target="_blank") https://toddmotto.com/digging-into-angulars-controller-as-syntax/
+                            .list-item
+                                a(href="http://blog.thoughtram.io/angularjs/2015/01/02/exploring-angular-1.3-bindToController.html", target="_blank") http://blog.thoughtram.io/angularjs/2015/01/02/exploring-angular-1.3-bindToController.html
 
 
-        footer
+        script(src="https://use.typekit.net/wik5qpy.js")
+        script.
+            try{Typekit.load({ async: true });}catch(e){}
