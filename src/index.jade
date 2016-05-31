@@ -1,0 +1,59 @@
+doctype html
+html(ng-app="app")
+    head
+        meta(charset="utf-8")
+
+        //- Display environment when not in production
+        if environment === "production"
+            title Angular Express
+        else
+            title= '[' + environment + '] - Angular Express'
+
+        base(href="/")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        link(rel="stylesheet", type="text/css", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+        link(rel="stylesheet", type="text/css", href="app.css")
+
+        //- Non production environment
+        //- Load jspm loader and configuration
+        if environment !== "production"
+            script(src="_jspm_packages/system.js")
+            script(src="config.js")
+            //- Bootstrap the application
+            script.
+                System.import('app');
+
+        //- Production environment
+        //- Load self executing bundle
+        if environment === "production"
+            script(src="build.js")
+
+    body
+
+        header
+            h1 Angular Express
+            h2 Component driven Angular development
+
+        main
+
+            .cards
+
+                .card
+                    .card__number 1
+                    .card__title Title
+                    .card__description Description
+                    .card__links
+                        a(href="", target="_blank") Link 1
+                        a(href="", target="_blank") Link 2
+
+                .card
+                    .card__number 2
+                    .card__title Title
+                    .card__description Description
+                    .card__links
+                        a(href="", target="_blank") Link 1
+                        a(href="", target="_blank") Link 2
+
+
+        footer

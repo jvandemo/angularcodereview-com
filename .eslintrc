@@ -1,0 +1,27 @@
+parser: babel-eslint
+eslint inrules:
+  indent:
+    - 2
+    - 4
+  quotes:
+    - 2
+    - single
+  linebreak-style:
+    - 2
+    - unix
+  semi:
+    - 2
+    - always
+rules:
+  no-unused-vars:
+    - 0
+  no-console:
+    - 0
+globals:
+  inject: true
+env:
+  es6: true
+  browser: true
+  mocha: true
+  jasmine: true # make sure 'expect' is understood
+extends: 'eslint:recommended'

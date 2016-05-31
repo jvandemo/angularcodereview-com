@@ -1,0 +1,45 @@
+@import "_jspm_packages/github/necolas/normalize.css@4.1.1/normalize.css";
+@import "_build/variables.less";
+@import "_build/cards.less";
+
+/**************************************************************************
+ * This is the main stylesheet referenced from index.jade
+ *
+ * This LESS file is automatically compiled to a CSS file.
+ *
+ * Use @import to import component specific styles or includes, for example:
+ * @import "components/_less/variables.less";
+ * @import "components/some-component/_build/styles.less";
+ *
+ * Delete this file and use app.scss or app.css if you prefer
+ * SCSS or plain CSS.
+ *
+ * When using LESS or SCSS, the resulting CSS is automatically
+ * minified and autprefixed.
+ *************************************************************************/
+
+/**************************************************************************
+ * Sample styles for index.jade, feel free to delete everything below
+ * this line and add your own styles...
+ *************************************************************************/
+
+html, body{
+  font-size: 100%;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  padding: 30px 50px;
+  color: #555;
+  -webkit-font-smoothing:antialiased;
+  background: @ng-blue;
+}
+
+a {
+  color: @ng-blue;
+}
+
+pre{
+  margin: 30px 0;
+}

@@ -1,0 +1,13 @@
+# Ignore editor stuff
+.idea
+
+# Ignore OS stuff
+.DS_Store
+
+# Ignore jspm stuff
+_jspm_packages
+
+# Ignore node stuff
+node_modules/
+npm-debug.log
+libpeerconnection.log
