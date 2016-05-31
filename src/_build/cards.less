@@ -5,18 +5,20 @@
 }
 
 .card{
-  flex: 1 0 100px;
+  flex: 1;
   background: white;
   border: 16px solid darken(@ng-blue, 10%);
   border-radius: 15px;
-  padding: 30px 60px;
+  padding: 45px 60px;
   width: 60%;
   max-width: 600px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
   &:nth-child(odd){
     transform: rotate(-1deg);
     margin-right: 120px;
-    margin-bottom: 60px;
+    margin-bottom: 90px;
     .card__number{
       left: 60px;
     }
@@ -24,7 +26,7 @@
   &:nth-child(even){
     transform: rotate(1deg);
     margin-left: 120px;
-    margin-bottom: 60px;
+    margin-bottom: 90px;
     .card__number{
       right: 60px;
     }
@@ -32,6 +34,7 @@
 }
 
 .card__number{
+  font-family: @font-family-script;
   border: 16px solid darken(@ng-blue, 10%);
   border-radius: 50%;
   font-size: 40px;
@@ -45,4 +48,24 @@
   line-height: 65px;
   font-weight: 700;
   color: white;
+}
+
+.card__title{
+  flex: 1 0 100%;
+  margin-bottom: 30px;
+}
+
+.card__what{
+  flex: 0 0 45%;
+  margin-bottom: 30px;
+}
+
+.card__why{
+  flex: 0 0 45%;
+  margin-bottom: 30px;
+  margin-left: 10%;
+}
+
+.card__links{
+  flex: 1 0 100%;
 }
