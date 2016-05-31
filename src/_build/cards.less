@@ -61,12 +61,19 @@
 .card__what{
   flex: 0 0 45%;
   margin-bottom: 30px;
+  @media(max-width: @screen-xs-max){
+    flex: 0 0 100%;
+  }
 }
 
 .card__why{
   flex: 0 0 45%;
   margin-bottom: 30px;
   margin-left: 10%;
+  @media(max-width: @screen-xs-max){
+    flex: 0 0 100%;
+    margin-left: 0;
+  }
 }
 
 .card__links{
