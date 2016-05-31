@@ -1,0 +1,48 @@
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card{
+  flex: 1 0 100px;
+  background: white;
+  border: 16px solid darken(@ng-blue, 10%);
+  border-radius: 15px;
+  padding: 30px 60px;
+  width: 60%;
+  max-width: 600px;
+  position: relative;
+  &:nth-child(odd){
+    transform: rotate(-1deg);
+    margin-right: 120px;
+    margin-bottom: 60px;
+    .card__number{
+      left: 60px;
+    }
+  }
+  &:nth-child(even){
+    transform: rotate(1deg);
+    margin-left: 120px;
+    margin-bottom: 60px;
+    .card__number{
+      right: 60px;
+    }
+  }
+}
+
+.card__number{
+  border: 16px solid darken(@ng-blue, 10%);
+  border-radius: 50%;
+  font-size: 40px;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  background: @ng-blue;
+  position: absolute;
+  top: -80px;
+  line-height: 65px;
+  font-weight: 700;
+  color: white;
+}
