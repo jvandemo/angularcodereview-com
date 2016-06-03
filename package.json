@@ -11,7 +11,8 @@
     "eslint": "eslint ./src",
     "development-server": "NODE_ENV=development node index.js",
     "production-server": "NODE_ENV=production node index.js",
-    "browser-sync": "node browser-sync.js"
+    "browser-sync": "node browser-sync.js",
+    "deploy": "surge dist/ angularcodereview.com"
   },
   "keywords": [
     "angular",
@@ -51,9 +52,7 @@
       "packages": "src/_jspm_packages"
     },
     "dependencies": {
-      "angular": "github:angular/bower-angular@^1.4.1",
-      "angular-mocks": "github:angular/bower-angular-mocks@^1.4.1",
-      "normalize.css": "github:necolas/normalize.css@^4.1.1"
+      "bootstrap-less": "github:distros/bootstrap-less@^3.3.9"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.1.13",
