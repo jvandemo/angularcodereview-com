@@ -2,19 +2,41 @@ footer.site-footer
 
     .container
         .row
-            .col-xs-2
+            .col-xs-3.col-sm-2
                 .site-footer__logo
 
                     img(src="/components/site-footer/img/angular-shield.png")
 
-            .col-xs-9.col-xs-offset-1
-                .site-footer__content
+            .col-xs-9.col-sm-9.col-sm-offset-1
 
-                    h1 Want to receive a quick note when a checklist is updated?
+                    .row
+                        .col-sm-5
 
+                            .site-footer__updates
+                                h1 Never miss an update
+                                p Subscribe to the mailing list and you'll receive a quick note when something was added or updated
 
+                            .site-footer__signup-form
+                                form(
+                                action="//jvandemo.us7.list-manage.com/subscribe/post?u=f5d2e64a1e160cafcc91f74a8&amp;id=0c91c917e9",
+                                method="post",
+                                class="validate",
+                                target="_blank",
+                                novalidate="")
+                                    .form-group
+                                        input.form-control(type="email", value="", placeholder="Your email address", required="", name="EMAIL")
+                                    button.btn.btn-primary(type="submit", name="subscribe")
+                                        | Sign up
+                                        i.fa.fa-long-arrow-right
 
-                    h1 Looking for someone to review your Angular application?
+                        .col-sm-5.col-sm-offset-2
+
+                            .site-footer__help
+                                h1 Need help?
+                                p Looking for someone to review your Angular application or need help improving your application's review score?
+                                a.btn.btn-primary(href="https://twitter.com/jvandemo", target="_blank")
+                                    | Contact me
+                                    i.fa.fa-long-arrow-right
 
 .site-disclaimer
 
