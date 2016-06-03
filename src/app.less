@@ -1,12 +1,14 @@
 @import "_build/variables.less";
 @import "_build/bootstrap";
 @import "_build/cards.less";
-@import "_build/code.less";
 @import "_build/lists.less";
-@import "_build/site-footer.less";
+@import "_build/homepage.less";
 @import "_build/page-header.less";
 @import "_build/sections.less";
 @import "components/site-header/_build/site-header.less";
+@import "components/site-footer/_build/site-footer.less";
+@import "angularjs/_build/angularjs.less";
+@import "angular-2/_build/angular-2.less";
 
 /**************************************************************************
  * This is the main stylesheet referenced from index.jade
@@ -38,8 +40,7 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;
-  background: #fafafa;
-  letter-spacing: 0.3px;
+  font-weight: 300;
 }
 
 a{
@@ -48,8 +49,4 @@ a{
 
 a.btn{
   text-transform: uppercase;
-}
-
-.site-main{
-  padding-bottom: 250px;
 }
