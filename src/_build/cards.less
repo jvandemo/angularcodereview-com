@@ -9,7 +9,7 @@
 .card{
   flex: 1;
   background: white;
-  border: 16px solid darken(@ng-blue, 10%);
+  border: 16px solid darken(@ngx-color-blue, 10%);
   border-radius: 15px;
   padding: 60px 60px 45px 60px;
   width: 60%;
@@ -33,19 +33,19 @@
       right: 60px;
     }
   }
-  box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+  //box-shadow: 0 3px 5px rgba(0,0,0,0.5);
 }
 
 .card__number{
-  font-family: @font-family-script;
-  border: 16px solid darken(@ng-blue, 10%);
+  font-family: @ngx-font-family-script;
+  border: 16px solid darken(@ngx-color-blue, 10%);
   border-radius: 50%;
   font-size: 40px;
   display: inline-block;
   width: 70px;
   height: 70px;
   text-align: center;
-  background: @ng-blue;
+  background: @ngx-color-blue;
   position: absolute;
   top: -80px;
   line-height: 65px;
@@ -56,7 +56,7 @@
 .card__title{
   flex: 1 0 100%;
   margin-bottom: 30px;
-  font-family: @font-family-script;
+  font-family: @ngx-font-family-script;
   font-weight: 700;
   font-size: 1.8rem;
 }
