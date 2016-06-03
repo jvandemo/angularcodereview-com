@@ -1,8 +1,6 @@
 @import '../../../_build/variables';
 
 header.site-header {
-  //padding: (@ngx-be-size-s + 2px) (3 * @ngx-be-size-m) @ngx-be-size-s (3 * @ngx-be-size-m);
-  border-bottom: 1px solid @ngx-border-color;
   background: rgb(25,118,210);
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
   position: relative;
@@ -10,8 +8,6 @@ header.site-header {
   a.navbar-brand {
     padding: 0;
     margin: 25px 20px 0 0;
-    img {
-    }
   }
 
   .navbar-default {
@@ -24,8 +20,7 @@ header.site-header {
         }
         &.active{
           a{
-            color: @ngx-color-red;
-            font-weight: bold;
+            color: white;
           }
         }
       }
@@ -34,12 +29,6 @@ header.site-header {
     .navbar-toggle{
       margin-top: 29px;
       margin-right: 5px;
-    }
-  }
-
-  .btn-buy-tickets{
-    @media(min-width: @screen-sm-min){
-      margin-left: 25px;
     }
   }
 
