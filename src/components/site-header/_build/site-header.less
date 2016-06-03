@@ -1,0 +1,75 @@
+@import '../../../_build/variables';
+
+header.site-header {
+  //padding: (@ngx-be-size-s + 2px) (3 * @ngx-be-size-m) @ngx-be-size-s (3 * @ngx-be-size-m);
+  border-bottom: 1px solid @ngx-border-color;
+  background: rgb(25,118,210);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+  position: relative;
+
+  a.navbar-brand {
+    padding: 0;
+    margin: 25px 20px 0 0;
+    img {
+    }
+  }
+
+  .navbar-default {
+    margin-bottom: 8px;
+    .navbar-nav{
+      li{
+        margin-top: 15px;
+        a {
+          text-transform: uppercase;
+        }
+        &.active{
+          a{
+            color: @ngx-color-red;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .navbar-toggle{
+      margin-top: 29px;
+      margin-right: 5px;
+    }
+  }
+
+  .btn-buy-tickets{
+    @media(min-width: @screen-sm-min){
+      margin-left: 25px;
+    }
+  }
+
+  // Animate hamburger
+
+  .navbar-toggle .icon-bar:nth-of-type(2) {
+    top: 1px;
+  }
+
+  .navbar-toggle .icon-bar:nth-of-type(3) {
+    top: 2px;
+  }
+
+  .navbar-toggle .icon-bar {
+    position: relative;
+    transition: all 500ms ease-in-out;
+  }
+
+  .navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(1) {
+    top: 6px;
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(2) {
+    background-color: transparent;
+  }
+
+  .navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(3) {
+    top: -6px;
+    transform: rotate(-45deg);
+  }
+
+}
