@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+
+        include ./_includes/head
+
+    body
+
+        include ./components/site-header/site-header
+
+        .site-main
+            != yield
+
+        include ./_includes/site-footer
+
+        script(src="https://use.typekit.net/wik5qpy.js")
+        script.
+            try{Typekit.load({ async: true });}catch(e){}
