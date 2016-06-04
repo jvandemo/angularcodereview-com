@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "karma start",
+    "test": "echo \"Error: no test needed.\"",
     "compile": "node ./bin/compile.js",
-    "build": "jspm bundle-sfx app --minify",
+    "build": "jspm bundle-sfx app --minify -y",
     "eslint": "eslint ./src",
     "development-server": "NODE_ENV=development node index.js",
     "production-server": "NODE_ENV=production node index.js",
     "browser-sync": "node browser-sync.js",
-    "deploy": "surge dist/ angularcodereview.com"
+    "deploy": "surge dist/ angularcodereview.com",
+    "build-and-compile-and-deploy": "npm run-script build && npm run-script compile && surge dist/ angularcodereview.com"
   },
   "keywords": [
     "angular",
