@@ -1,14 +1,30 @@
-# Welcome
+# Angular Code Review
 
-Welcome to this [Angular Express](http://www.angular-express.com) web application.
+Welcome to the public repository of [angularcodereview.com](http://angularcodereview.com/).
 
-## How to get started
+[![angularcodereview](https://cloud.githubusercontent.com/assets/1859381/15802364/7cc7a72a-2aaf-11e6-9d93-ba3fcfb94292.png)](http://angularcodereview.com/)
+
+## How to contribute
+
+Want to add or change items in the code review checklists? Awesome!
+
+Here's the best way to contribute:
+
+1. [Create a new issue](issues/new) to discuss the changes you would like to see
+2. Create a PR referencing the issue your PR is tackling
+
+Quick links to the checklist source code:
+- [src/angularjs/index.jade](blob/master/src/angularjs/index.jade)
+- [src/angular-2/index.jade](blob/master/src/angular-2/index.jade)
+
+## How to run the website locally on your machine
 
 First install all dependencies:
 
 ```bash
-$ jspm install
+$ npm install -g jspm
 $ npm install
+$ jspm install
 ```
 
 To start the Angular Express server:
@@ -19,30 +35,19 @@ $ node index.js
 
 then navigate to: `<ip>:9000` in your browser.
 
-![ngx-boilerplate-default-running](https://cloud.githubusercontent.com/assets/1859381/8289575/936cdad0-191d-11e5-934a-08fc095054ac.png)
+## How the code works
 
-## Configuring the server
+For more details about the technical details, check out the [Angular Express boilerplate documentation](https://github.com/ngx-boilerplates/default).
 
-The configuration is stored in configuration files in the `/config` directory.
+## How to deploy
 
-It can be overriden and extended using the [node-config](https://github.com/lorenwest/node-config) rules:
+The repository is configured with [Travis CI](https://travis-ci.org) to automatically deploy updates to [Surge](http://surge.sh/).
+
+To deploy manually:
 
 ```bash
-# Default configuration
-/config/default.js
-
-# Production configuration
-/config/production.js
-
-# Local configuration
-/config/local.js
+$ npm run deploy
 ```
-
-See [configuration files](https://github.com/lorenwest/node-config/wiki/Configuration-Files) for more information.
-
-## Development
-
-For more details about the technical details, check out the [Angular Express boilerlate documentation](https://github.com/ngx-boilerplates/default).
 
 ## Change log
 
