@@ -14,8 +14,8 @@ Here's the best way to contribute:
 2. Create a PR referencing the issue your PR is tackling
 
 Quick links to the checklist source code:
-- [src/angularjs/index.jade](blob/master/src/angularjs/index.jade)
-- [src/angular-2/index.jade](blob/master/src/angular-2/index.jade)
+- [src/angularjs/index.jade](src/angularjs/index.jade)
+- [src/angular-2/index.jade](src/angular-2/index.jade)
 
 ## How to run the website locally on your machine
 
