@@ -12,8 +12,8 @@
     "development-server": "NODE_ENV=development node index.js",
     "production-server": "NODE_ENV=production node index.js",
     "browser-sync": "node browser-sync.js",
-    "deploy": "surge dist/ angularcodereview.com",
-    "build-and-compile-and-deploy": "npm run-script build && npm run-script compile && surge dist/ angularcodereview.com"
+    "deploy": "firebase deploy",
+    "deploy-ci": "npm run-script build && npm run-script compile && firebase deploy --token ${FIREBASE_TOKEN}"
   },
   "keywords": [
     "angular",
