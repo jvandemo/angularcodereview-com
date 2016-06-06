@@ -41,7 +41,7 @@ For more details about the technical details, check out the [Angular Express boi
 
 ## How to deploy
 
-The repository is configured with [Travis CI](https://travis-ci.org) to automatically deploy updates to [Surge](http://surge.sh/).
+The repository is configured with [Travis CI](https://travis-ci.org) to automatically deploy updates to [Firebase hosting](https://www.firebase.com).
 
 To deploy manually:
 
