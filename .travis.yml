@@ -3,8 +3,12 @@ node_js:
   - "0.12"
 before_script:
   - npm install -g jspm
+  - npm install -g surge
   - npm install -g firebase-tools
   - npm install
   - jspm install -y
+  - npm run build
+  - npm run compile
 after_success:
-  - npm run deploy-ci
+  - npm run ci-deploy-to-surge
+  - npm run ci-deploy-to-firebase
