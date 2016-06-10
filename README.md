@@ -10,7 +10,7 @@ Want to add or change items in the code review checklists? Awesome!
 
 Here's the best way to contribute:
 
-1. [Create a new issue](/jvandemo/angularcodereview-com/issues/new) to discuss the changes you would like to see
+1. [Create a new issue](https://github.com/jvandemo/angularcodereview-com/issues/new) to discuss the changes you would like to see
 2. Create a PR referencing the issue your PR is tackling
 
 Quick links to the checklist source code:
