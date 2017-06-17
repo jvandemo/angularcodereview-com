@@ -634,6 +634,43 @@
                             .list-heading Links
                             .list-item
                                 a(href="http://jvandemo.com/how-to-use-areas-and-border-states-to-control-access-in-an-angular-application-with-ui-router/", target="_blank") http://jvandemo.com/how-to-use-areas-and-border-states-to-control-access-in-an-angular-application-with-ui-router/
+                .card
+                    .card__number 3
+                    .card__title Is there a server-side template engine involved?
+                    .card__what
+                        .list.list--what
+                            .list-heading What?
+                            .list-item Don't use a server-side template engine for building angular templates
+                    .card__why
+                        .list.list--why
+                            .list-heading Why?
+                            .list-item XSS prevention of the server-side template don't avoid injection of angular expressions
+                            .list-item Violation of this rule can result in a XSS vulnerability
+                            .list-item This issue is called "client-side template injection"
+                    .card__links
+                        .list.list--links
+                            .list-heading Links
+                            .list-item
+                                a(href="https://docs.angularjs.org/guide/security", target="_blank") https://docs.angularjs.org/guide/security
+                            .list-item
+                                a(href="https://portswigger.net/knowledgebase/issues/details/00200308_clientsidetemplateinjection", target="_blank") https://portswigger.net/knowledgebase/issues/details/00200308_clientsidetemplateinjection
+                .card
+                    .card__number 4
+                    .card__title Is user input used for template generation or in watch expressions?
+                    .card__what
+                        .list.list--what
+                            .list-heading What?
+                            .list-item User input must not be used for template generation: $compile, $parse and $interpolate
+                            .list-item User input must not be used for expressions inside the following functions: watches, $eval, $apply and not in the orderBy pipe
+                    .card__why
+                        .list.list--why
+                            .list-heading Why?
+                            .list-item Violation of this rule can result in a XSS vulnerability
+                    .card__links
+                        .list.list--links
+                            .list-heading Links
+                            .list-item
+                                a(href="https://docs.angularjs.org/guide/security", target="_blank") https://docs.angularjs.org/guide/security
 
     .section.section--accessibility
 
