@@ -36,7 +36,7 @@
     "browser-sync": "^2.9.10",
     "chai": "^3.0.0",
     "chokidar": "^1.2.0",
-    "eslint": "^1.5.1",
+    "eslint": "^6.8.0",
     "fs-extra": "^0.20.0",
     "karma": "^0.12.36",
     "karma-babel-preprocessor": "^5.2.1",
